@@ -7,7 +7,7 @@
                    
                 </li>
                 <li>
-                    <NuxtLink to="/book-app/addBook" class=" hover:text-black absolute top-2 right-7  p-1 m-2 text-lg  text-white 
+                    <NuxtLink to="/addBook" class=" hover:text-black absolute top-2 right-7  p-1 m-2 text-lg  text-white 
                     transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:scale-110">Ekle</NuxtLink>
                 </li>
             </ul>
