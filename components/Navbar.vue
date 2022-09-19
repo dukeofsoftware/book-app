@@ -3,7 +3,7 @@
         <div class=" bg-blue-500  p-2 ">
             <ul class="flex justify-center items-center p-2 ">
                 <li class="text-center text-2xl text-white">
-                    <NuxtLink to="/" class="hover:text-black transition duration-300 ease-in-out">Book List</NuxtLink>
+                    <button @click="pushRoute" class="hover:text-black transition duration-300 ease-in-out">Book List</button>
                    
                 </li>
                 <li>
@@ -19,8 +19,20 @@
 </template>
 <script>
 export default {
-       name: "",
+     data() {
+        return {
+            name: "",
       pages: "",
+        }
+     },
+methods:{
+    pushRoute(){
+        const router = useRouter();
+
+        router.push({ path: "/" });
+
+    }
+}
 }
 </script>
 <style lang="">
