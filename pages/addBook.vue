@@ -22,14 +22,12 @@ export default {
     },
     methods:{
         ekle() {
-          const route =useRoute()
       this.kitaplar=JSON.parse(localStorage.getItem("kitaplar"));
       this.kitaplar.push({
         name: this.name,
         pages: this.pages,
       });
         window.localStorage.setItem(`kitaplar`, JSON.stringify(this.kitaplar));
-        route.push("/")
     },
    
     }
