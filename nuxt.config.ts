@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
   target: 'static',
   router: {
-    base: '/book-app/'
+    base:    process.env.NODE_ENV === "production" ? '/book-app/' : "/",
+
   },
   css:["assets/css/tailwind.css"],
   build: {
