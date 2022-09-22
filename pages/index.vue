@@ -16,7 +16,9 @@ export default {
   data() {
     return {
    
-      kaydedilenKitaplar: [],
+      kaydedilenKitaplar: [{name:"Harry Potter",
+    pages:"400"
+    }],
     };
   },
   methods: {
@@ -32,8 +34,9 @@ export default {
 
 },
 mounted() {
+  window.localStorage.getItem(`kitaplar`, JSON.stringify(this.kaydedilenKitaplar));
+
       this.kaydedilenKitaplar = JSON.parse(localStorage.getItem("kitaplar"));
-    console.log(this.kaydedilenKitaplar)
   },};
 </script>
 <style lang=""></style>
