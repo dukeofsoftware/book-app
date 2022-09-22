@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   target: 'static',
   router: {
-    base: '/book-app/'
+    base: '/duke-book/'
   },
   css:["assets/css/tailwind.css"],
   build: {
